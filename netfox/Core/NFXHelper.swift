@@ -125,11 +125,8 @@ extension NSURLRequest
 {
     func getNFXURL() -> String
     {
-        if (URL != nil) {
-            return URL!.absoluteString;
-        } else {
-            return "-"
-        }
+
+        return (URL?.absoluteString ?? "-")
     }
     
     func getNFXMethod() -> String
